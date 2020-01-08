@@ -1,0 +1,331 @@
+/* ===========================
+        Mobile Menu
+=========================== */
+#mobile-nav-open-btn {
+    font-size: 30px;
+    color: #f4c613;
+    cursor: pointer;
+    z-index: 2;
+    top: 6px;
+    right: 0;
+    position: absolute;
+    display: none;
+    padding: 2px 15px;
+}
+.navbar-brand {
+    left: 0px;
+    top: 6px;
+    position: absolute;
+}
+#mobile-nav {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, .8);
+    transition: all 300ms linear;
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+    overflow-y: hidden;
+    display: none;
+}
+#mobile-nav-close-btn {
+    font-size: 70px;
+    font-family: "Raleway",sans-serif;
+    color: #212226;
+    font-weight: 400;
+    cursor: pointer;
+    top: -25px;
+    right: 13px;
+    position: absolute;
+}
+#mobile-nav-content {
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+    top: 10%;
+}
+.navbar ul, .navbar li {
+    margin-right: 0px;
+}
+#mobile-nav ul li {
+    margin-bottom: 20px;
+}
+#mobile-nav a {
+    font-family: "Raleway",sans-serif;
+    font-size: 18px;
+    color: #212226;
+    font-weight: 400;
+    display: inline;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+#mobile-nav a:hover,
+#mobile-nav a:focus,
+#mobile-nav-close-btn:hover,
+#mobile-nav-close-btn:focus {
+    color: #f4c613;
+    background: none;
+}
+.white-nav-top #mobile-nav ul.navbar-nav > li > a.active {
+    color: #f4c613;
+    font-weight: 500;
+}
+
+@media (min-width: 1200px) {
+    .navbar li {
+        margin-right: 30px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .vertical-heading h2 {
+        font-size: 29px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .vertical-heading h2 {
+        font-size: 29px;
+    }
+    #home-heading h1 {
+        font-size: 41px;
+    }
+    #home-text p {
+        font-size: 13px;
+    }
+    .btn-general {
+        padding: 8px 35px 8px 35px;
+        font-size: 10px;
+    }
+    .about-item p {
+        height: 200px;
+    }
+    #tech-statement h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .r-tabs-accordion-title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .r-tabs-accordion-title a {
+        font-family: "Raleway", sans-serif;
+        font-size: 13px;
+        color: #212226;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 0;
+        text-decoration: none;
+    }
+    .r-tabs-accordion-title.r-tabs-state-active a {
+        color: #f4c613;
+        font-weight: 700;
+        border-bottom: 3px solid #f4c613;
+        padding-bottom: 5px;
+        transition: border-color 300ms linear;
+        -webkit-transition: border-color 300ms linear;
+        -moz-transition: border-color 300ms linear;
+        -ms-transition: border-color 300ms linear;
+        -o-transition: border-color 300ms linear;
+    }
+    /* .pricing-table .price h2 {
+    margin: 0 0 0 6px;
+    font-size: 35px;
+    } */
+    .btn-back-to-top {
+        display: none !important;
+    }
+    #mobile-nav-open-btn {
+        display: block;
+    }
+    #mobile-nav {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    .vertical-heading {
+        text-align: center;
+    }
+    .vertical-heading h2 {
+        font-size: 29px;
+        line-height: normal;
+        margin: 0;
+    }
+    .vertical-heading h5 {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        display: block;
+        position: static;
+        margin-bottom: 15px;
+    }
+    #home-heading h1 {
+        font-size: 22px;
+    }
+    #home-text p {
+        font-size: 13px;
+        line-height: 18px;
+        margin: 8px 2px 30px 2px;
+    }
+    .btn-general {
+        padding: 8px 25px 6px 25px;
+        font-size: 10px;
+    }
+    .content-box-lg {
+        padding: 90px 0;
+    }
+    #about-left {
+        margin-bottom: 50px;
+    }
+    #about-right {
+        text-align: center;
+    }
+    .content-box-md {
+        padding: 80px 0;
+    }
+    .about-item {
+        padding: 55px 30px;
+    }
+    .about-item i {
+        font-size: 30px;
+    }
+    .about-item h3 {
+        font-size: 18px;
+    }
+    .skill h4 {
+        line-height: 30px;
+        margin-bottom: 20px;
+        font-weight: normal;
+        font-size: 10px;
+    }
+    .progress-bar span {
+        font-size: 5px;
+        font-weight: 100;
+        font-family: "Open Sans", sans-serif;
+        background: #212226;
+        padding: 3px;
+        position: absolute;
+        left: 93%;
+        top: -25px;
+    }
+    .progress-bar span:before {
+        content: "";
+        border-top: 6px solid #212226;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        position: absolute;
+        bottom: -8px;
+        left: 23%;
+    }
+    #team-left .vertical-heading {
+        min-height: 130px;
+    }
+    #tech-statement h3 {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .service, .service .icon {
+        text-align: center !important;
+    }
+    .service-tab h3 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .service-tab p {
+        line-height: 22px;
+        margin-bottom: 30px;
+        font-size: 10px;
+    }
+    .service h4 {
+        font-size: 18px;
+    }
+    .r-tabs-accordion-title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .r-tabs-accordion-title a {
+        font-family: "Raleway", sans-serif;
+        font-size: 13px;
+        color: #212226;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 0;
+        text-decoration: none;
+    }
+    .r-tabs-accordion-title.r-tabs-state-active a {
+        color: #f4c613;
+        font-weight: 700;
+        border-bottom: 3px solid #f4c613;
+        padding-bottom: 5px;
+        transition: border-color 300ms linear;
+        -webkit-transition: border-color 300ms linear;
+        -moz-transition: border-color 300ms linear;
+        -ms-transition: border-color 300ms linear;
+        -o-transition: border-color 300ms linear;
+    }
+    #services-tabs .tab-bg {
+        text-align: center;
+        min-height: 200px;
+        padding: 40px 30px;
+    }
+    #isotope-filters button {
+        padding-right: 5px;
+        font-size: 10px;
+    }
+    #testimonials .vertical-heading h2 {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    .testimonial h3 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .testimonial .stars {
+        font-size: 20px;
+        text-align: center !important;
+    }
+    .author .author-name-des {
+        text-align: center;
+    }
+    .stats-item {
+        margin-bottom: 20px;
+        padding: 25px 5px;
+    }
+    .stats-item i {
+        font-size: 30px;
+    }
+    .stats-item p {
+        font-size: 9px;
+    }
+    .stats-item h3 {
+        font-size: 20px;
+    }
+    /* .pricing-table .price h2 {
+    margin: 0 0 0 6px;
+    font-size: 35px;
+    } */
+    .btn-back-to-top {
+        display: none !important;
+    }
+    #mobile-nav-open-btn {
+        display: block;
+    }
+    #mobile-nav {
+        display: block;
+    }
+    .white-nav-top {
+        height: 60px;
+    }
+}
